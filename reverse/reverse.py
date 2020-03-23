@@ -45,18 +45,25 @@ class LinkedList:
 
     def reverse_list(self):
 
+        # if not self.head or self.head.next_node:
+        #     return self.head
+        # reversed = self.reverse_list(self.head.next_node)
+        # self.head.next_node.next_node = self.head
+        # self.head.next = None
+        # return reversed
+
         prev_node = None
         current = self.head
-# null <-- 1 <--  2 --> 3 --> 4
-#          p         c    nn
-# nn
+        # null <-- 1 <--  2 --> 3 --> 4
+        #          p         c    nn
+        # nn
 
-# set prev-node to null
-# grab the list assign to current
-# pointer nextNode ahead
-# begin to point the current.next to the prev
-# reassign prev to current to continue operation through list
-# push current forward to nextNode
+        # set prev-node to null
+        # grab the list assign to current
+        # pointer nextNode ahead
+        # begin to point the current.next to the prev
+        # reassign prev to current to continue operation through list
+        # push current forward to nextNode
         while current is not None:
             next_node = current.next_node
             current.next_node = prev_node
